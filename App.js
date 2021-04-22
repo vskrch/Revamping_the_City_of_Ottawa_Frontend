@@ -14,6 +14,7 @@ import SigninPage from "./app/screens/sgpg";
 import LocationPage from "./app/screens/location";
 import MyRequest from "./app/screens/MyRequests";
 import Requestdetails from "./app/screens/RequestDetails";
+import Wasteadvisor from "./app/screens/Wasteadvisor";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
       <Route exact path="/location" component={LocationPage} />
       <Route exact path="/request" component={MyRequest} />
       <Route exact path="/request_details" component={Requestdetails} />
+      <Route eact path="/wasteadvisor" component={Wasteadvisor}/>
     </NativeRouter>
   );
 }

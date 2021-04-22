@@ -41,7 +41,7 @@ export const cache = new InMemoryCache();
 const client = new ApolloClient({
   cache,
   link: createHttpLink({
-    uri: "http://10.0.2.2:7000/graphql",
+    uri: "http://localhost:7101/graphql",
   }),
 });
 

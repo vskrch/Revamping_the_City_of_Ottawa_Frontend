@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "CityPrototype",
+    "name": "CityOfOttawa_App_Microservices",
     "slug": "CityPrototype",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,12 +13,23 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "web": {
-      "favicon": "./app/assets/favicon.png"
-    }
+      "favicon": "./app/assets/favicon.png",
+      "build": {
+        "babel": {
+          "include": [
+            "react-router-native"
+          ]
+        }
+      }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/vskrch/Revamping_the_City_of_Ottawa_Frontend"
   }
 }
